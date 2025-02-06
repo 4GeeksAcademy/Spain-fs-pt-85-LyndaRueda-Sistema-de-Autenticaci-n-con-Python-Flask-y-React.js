@@ -7,9 +7,11 @@ export const Navbar = () => {
     let navigate = useNavigate();
 
     const handleLogout = () => {
-        // Llamamos a la función logout de actions para eliminar el token
+
+        // We call the logout function from actions to remove the token.
         actions.logout();
-        // Redirigimos al home usando window.location.href
+        
+        // We navigate to the home page
         window.location.href = "https://humble-space-enigma-pjjq5g77v4v63g75-3001.app.github.dev/";
     };
 
@@ -18,16 +20,15 @@ export const Navbar = () => {
             <div className="container d-flex justify-content-between">
                 <Link to="/">
                     <span className="navbar-brand mb-0 h1">
-                        Sistema de Autenticación con Python, Flask y React.js
+                    User authentication project using Python, Flask, and React.js. 💣
                     </span>
                 </Link>
                 <div className="d-flex align-items-center">
-                    {/* Enlace a Home */}
                     <Link to="/" className="btn btn-link mr-3">
-                        Back to Home
+                    🏠
                     </Link>
 
-                    {/* Si está logueado, mostrar el botón Logout */}
+                    {/* If the user is logged in, display the logout button */}
                     {store.auth ? (
                         <button onClick={handleLogout} className="btn btn-danger">
                             Logout

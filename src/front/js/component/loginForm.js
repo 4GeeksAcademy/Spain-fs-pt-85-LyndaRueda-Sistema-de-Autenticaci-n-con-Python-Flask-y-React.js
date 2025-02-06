@@ -20,7 +20,7 @@ export const LoginForm = () => {
         <div className="mx-auto w-50">
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label">Email address 📧</label>
                     <input
                         type="email"
                         className="form-control"
@@ -32,7 +32,7 @@ export const LoginForm = () => {
 
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                    <label htmlFor="exampleInputPassword1" className="form-label">Password 🔑</label>
                     <input
                         type="password"
                         className="form-control"
